@@ -22,8 +22,12 @@ I used HTML and CSS to finish this challenge.
 ---
 ## Preview
 
-Desktop version
+**Desktop version**
+
 ![alt text](./images/result-summary-pic.png)
 
-Mobile Version
+---
+
+**Mobile Version**
+
 ![alt text](./images/result-summary-pic-mobile.png)
