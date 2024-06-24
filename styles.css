@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 18px;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 650px;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 15px 15px 15px hsl(221, 100%, 96%);
+    margin: 50px;
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    width: 50%;
+    padding: 30px;
+    color: hsl(0, 0%, 100%);
+    border-radius: 30px;
+}
+
+.final_result{
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    padding: 30px 50px;
+    border-radius: 100%;    
+}
+
+.final_result p{
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+.final_result span {
+    opacity: 0.7;
+}
+.result h2 {
+    opacity: .7;
+    font-size: 1.3rem;
+}
+
+.phrase h2 {
+    opacity: 1;
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+}
+
+.phrase p {
+    font-weight: 500;
+    opacity: .7;
+}
+
+
+.summary{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    text-align: left;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.categories  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+.topic{
+    display: flex;
+    gap: 10px;
+}
+
+.categories p{
+    font-weight: 500;
+}
+
+.categories span{
+    opacity: .5;
+}
+
+
+#react{
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+#mem{
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+#verb{
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+#vis{
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+#react .topic p{
+    color: hsla(0, 100%, 67%);
+}
+
+#mem .topic p{
+    color: hsl(39, 100%, 56%);
+}
+
+#verb .topic p{
+    color: hsl(166, 100%, 37%);
+}
+
+
+#vis .topic p{
+    color: hsl(234, 85%, 45%);
+}
+
+.btn {
+    padding: 15px;
+    border-radius: 100px;
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+
+@media only screen and (max-width: 630px){
+
+    .card{
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        min-height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .result{
+        width: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .summary{
+        width: 100%;
+    }
+}
